@@ -20,7 +20,7 @@ app.post('/addBlog',async(req,res)=>{
   try{
       var item=req.body;
       const data1=new blogModel(item);
-      const savedData=await data1.save();
+      const saveddata=await data1.save();
       res.status(200).send('post successful')
   }catch(error){
            res.status(404).send('post unsuccessful');

@@ -10,7 +10,7 @@ require('./connection')
 app.get('/',async (req,res)=>{
   try{
 const blog=await blogModel.find();
-res.status(200).send(data);
+res.status(200).send(blog);
 }catch(error){
   res.status(404).send('data not found');
 }

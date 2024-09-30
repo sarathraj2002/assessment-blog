@@ -2,11 +2,11 @@ const mongoose=require("mongoose");
 const blogSchema = mongoose.Schema({
     Title:String,
     Content:String,
-    author:String,
-    year:Number
+    Author:String,
+    Year:Number
 
 });
-const model=mongoose.model('blog',blogSchema)
-module.exports=model;
+const blogData=mongoose.model('blogdbatla',blogSchema)
+module.exports=blogData
 
 
